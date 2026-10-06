@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Warm, considered palette - a financial tool people need to trust,
+     not a generic cool-gray SaaS dashboard. Ledger-and-ink, not
+     software-blue. */
+  --color-paper: #faf7f2;
+  --color-paper-raised: #ffffff;
+  --color-ink: #211d18;
+  --color-ink-muted: #6b6255;
+  --color-line: #e7dfd2;
+  --color-copper: #b5622c;
+  --color-copper-dark: #94501f;
+  --color-copper-soft: #f2e4d8;
+
+  --color-severity-critical: #a1352b;
+  --color-severity-high: #b5622c;
+  --color-severity-medium: #b08a1f;
+  --color-severity-low: #6b7a5e;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
